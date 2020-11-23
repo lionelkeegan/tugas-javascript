@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>IMAGE PICKER</title>
+</head>
+<body style="margin: 200px">
+
+	<center>
+		<select onchange="gantigambar();" id="listgambar">
+			<option value="https://static.wikia.nocookie.net/callofduty/images/1/15/ModernWarfare_Artwork_MW.jpg/revision/latest?cb=20190530170954">PILIH KARAKTER</option> <!--jadi ini buat nampilin gambar, itu bisa make link ke google atau ke folder yang kita buat -->
+			<option value="https://static.wikia.nocookie.net/callofduty/images/2/22/Kamarov_MW.jpg/revision/latest?cb=20200531160808">KAMAROV</option>
+			<option value="https://static.wikia.nocookie.net/callofduty/images/f/f3/Alex_CampaignReveal_MW.jpg/revision/latest?cb=20190925093902">ALEX</option>
+			<option value="https://static.wikia.nocookie.net/callofduty/images/7/7f/Nikolai_S6_Trailer_MW.png/revision/latest?cb=20200922163224">NIKOLAI</option>
+			<option value="https://static.wikia.nocookie.net/callofduty/images/7/71/Pillar3.jpg/revision/latest?cb=20191004172714">CAPT. PRICE</option>
+			<option value="https://upload.wikimedia.org/wikipedia/en/5/5e/John_%22Soap%22_MacTavish_MW3.png">SOAP</option>
+			<option value="https://static.wikia.nocookie.net/callofduty/images/1/1e/HadirKarim_ATVIBlog_MW.jpg/revision/latest?cb=20191003211241">HADIR</option>
+		</select>
+	</center>
+		<br/>
+	<img src="https://static.wikia.nocookie.net/callofduty/images/1/15/ModernWarfare_Artwork_MW.jpg/revision/latest?cb=20190530170954" style="width: 50%" id="gambar">
+
+</body>
+<script type="text/javascript">
+	function gantigambar() {
+		// membuat variabel untuk mengambil gambar
+		let gambar = document.getElementById("listgambar").value;
+		document.getElementById("gambar").src = gambar;// hasil dari pemanggilan dan ditaroh di id="gambar"
+		alert("Ini Gambar " + gambar);//menampilkan pesan untuk nama gambar yang diambil
+	}
+</script>
+</html>
